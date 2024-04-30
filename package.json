@@ -1,0 +1,14 @@
+{
+  "name": "under_the_trees",
+  "version": "1.0.0",
+  "description": "website for under the trees boise",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@travis-horton",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
