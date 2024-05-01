@@ -1,0 +1,11 @@
+<div class="row footer-text">
+  <div class="text-center text-md-left nav-link">
+    © Under the Trees Boise {{ now.Year }}. All rights reserved.
+  </div>
+  <!-- JavaScript and dependencies -->
+
+  {{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+  {{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
+
+  <script src="{{$js.RelPermalink}}" defer></script>
+</div>

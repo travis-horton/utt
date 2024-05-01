@@ -1,0 +1,37 @@
+<div class="center">
+<div class="jumbotron jumbotron-fluid">
+  <h1 class="display-4">UNDER THE <span class="WC">TREES</span></h1>
+</div>
+<nav class="navbar navbar-expand-lg">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/posts">Posts</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle" 
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          {{ range slice "Hi" "thing" }}
+          <li>
+            <a>{{ . }}</a>
+          </li>
+          {{ end }}
+        </ul> 
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>

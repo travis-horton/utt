@@ -1,0 +1,17 @@
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<meta charset="utf-8">
+<meta name="description"
+    content="Website meta description for google search results go here" />
+<meta name="dc.relation" content="{{ .Site.BaseURL }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
+
+{{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+
+{{ $sass := resources.Get "/sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS $options | minify}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+
+<!-- Favicon! -->
+<link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico' />

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Trees';
+  src: url('/fonts/WC_RoughTrad.otf');
+}
+
+body {
+  font-family: 'Avenir';
+  line-height: 1.5;
+  background-image: url('/images/bg_pink.png');
+  color: #000;
+}
+
+header {
+  font-family: 'Trees';
+  color: #FFF;
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-top: 1rem;
+  background-image: url('/images/bg_teal.png');
+  color: #FFF;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+a {
+  color: #FFF;
+  font-weight: heavy;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.WC {
+  font-family: 'Trees';
+}
+
+$primary: #F2EF84;
+
+// font-family: 'Dela Gothic One';
